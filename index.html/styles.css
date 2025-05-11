@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+  background-color: lightblue;
+}
+h1 {
+  color: red;
+  text-align: center;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cuerpo */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('ruta/a/imagen_paisaje.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background-color: rgba(127, 30, 32, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Secciones principales */
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #7f1e20;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  margin-bottom: 10px;
+  color: #7f1e20;
+}
+
+/* Pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+
+/* ANIMACIÓN DE DESVANECIMIENTO AL ENTRAR */
+.animar {
+  animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* EFECTO DE CRECIMIENTO EN BOTONES AL PASAR EL MOUSE */
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #2e3b4e;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+nav ul li a:hover {
+  transform: scale(1.1);
+  background-color: #4e6285;
+}
+
+/* ANIMACIÓN DE DESVANECIMIENTO */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Título con duración personalizada */
+.animar-titulo {
+  animation: aparecer 4s ease-in-out;
+}
+
+
